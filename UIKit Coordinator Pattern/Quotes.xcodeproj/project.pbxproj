@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		00D871DF2C31A0580095E55A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D871DE2C31A0580095E55A /* AppCoordinator.swift */; };
 		00D871E12C31A3EF0095E55A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D871E02C31A3EF0095E55A /* SceneDelegate.swift */; };
+		00D871E52C31AEE80095E55A /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D871E42C31AEE80095E55A /* Storyboardable.swift */; };
+		00D871ED2C31B1740095E55A /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D871EC2C31B1740095E55A /* QuotesTests.swift */; };
 		CCE41152229F9651009EF1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE41151229F9651009EF1C2 /* AppDelegate.swift */; };
 		CCE41154229F9651009EF1C2 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE41153229F9651009EF1C2 /* QuotesViewController.swift */; };
 		CCE41157229F9651009EF1C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE41155229F9651009EF1C2 /* Main.storyboard */; };
@@ -23,9 +25,22 @@
 		CCE4117A229FA9D2009EF1C2 /* Notification+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE41179229FA9D2009EF1C2 /* Notification+Settings.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00D871EE2C31B1740095E55A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE41146229F9651009EF1C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE4114D229F9651009EF1C2;
+			remoteInfo = Quotes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		00D871DE2C31A0580095E55A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		00D871E02C31A3EF0095E55A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00D871E42C31AEE80095E55A /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		00D871EA2C31B1740095E55A /* QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D871EC2C31B1740095E55A /* QuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTests.swift; sourceTree = "<group>"; };
 		CCE4114E229F9651009EF1C2 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE41151229F9651009EF1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE41153229F9651009EF1C2 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00D871E72C31B1740095E55A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE4114B229F9651009EF1C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +83,38 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		00D871E22C31AEC50095E55A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00D871E32C31AEDB0095E55A /* Storyboardable */,
+				00D871DD2C31A04A0095E55A /* Coordinators */,
+				CCE41166229F967A009EF1C2 /* View Controllers */,
+				CCE41165229F9670009EF1C2 /* Storyboards */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00D871E32C31AEDB0095E55A /* Storyboardable */ = {
+			isa = PBXGroup;
+			children = (
+				00D871E42C31AEE80095E55A /* Storyboardable.swift */,
+			);
+			path = Storyboardable;
+			sourceTree = "<group>";
+		};
+		00D871EB2C31B1740095E55A /* QuotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D871EC2C31B1740095E55A /* QuotesTests.swift */,
+			);
+			path = QuotesTests;
+			sourceTree = "<group>";
+		};
 		CCE41145229F9651009EF1C2 = {
 			isa = PBXGroup;
 			children = (
 				CCE41150229F9651009EF1C2 /* Quotes */,
+				00D871EB2C31B1740095E55A /* QuotesTests */,
 				CCE4114F229F9651009EF1C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				CCE4114E229F9651009EF1C2 /* Quotes.app */,
+				00D871EA2C31B1740095E55A /* QuotesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,10 +131,8 @@
 		CCE41150229F9651009EF1C2 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				00D871DD2C31A04A0095E55A /* Coordinators */,
+				00D871E22C31AEC50095E55A /* Presentation */,
 				CCE41167229F9682009EF1C2 /* Application Delegate */,
-				CCE41166229F967A009EF1C2 /* View Controllers */,
-				CCE41165229F9670009EF1C2 /* Storyboards */,
 				CCE41172229FA6C1009EF1C2 /* Extensions */,
 				CCE41164229F966A009EF1C2 /* Resources */,
 				CCE4116C229F96D0009EF1C2 /* Models */,
@@ -166,6 +215,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00D871E92C31B1740095E55A /* QuotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D871F02C31B1740095E55A /* Build configuration list for PBXNativeTarget "QuotesTests" */;
+			buildPhases = (
+				00D871E62C31B1740095E55A /* Sources */,
+				00D871E72C31B1740095E55A /* Frameworks */,
+				00D871E82C31B1740095E55A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D871EF2C31B1740095E55A /* PBXTargetDependency */,
+			);
+			name = QuotesTests;
+			productName = QuotesTests;
+			productReference = 00D871EA2C31B1740095E55A /* QuotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CCE4114D229F9651009EF1C2 /* Quotes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCE41160229F9652009EF1C2 /* Build configuration list for PBXNativeTarget "Quotes" */;
@@ -189,10 +256,14 @@
 		CCE41146229F9651009EF1C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Code Foundry";
 				TargetAttributes = {
+					00D871E92C31B1740095E55A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CCE4114D229F9651009EF1C2;
+					};
 					CCE4114D229F9651009EF1C2 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -212,11 +283,19 @@
 			projectRoot = "";
 			targets = (
 				CCE4114D229F9651009EF1C2 /* Quotes */,
+				00D871E92C31B1740095E55A /* QuotesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00D871E82C31B1740095E55A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE4114C229F9651009EF1C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +309,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00D871E62C31B1740095E55A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D871ED2C31B1740095E55A /* QuotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE4114A229F9651009EF1C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +325,7 @@
 				CCE41154229F9651009EF1C2 /* QuotesViewController.swift in Sources */,
 				00D871DF2C31A0580095E55A /* AppCoordinator.swift in Sources */,
 				CCE41176229FA775009EF1C2 /* FontWeight.swift in Sources */,
+				00D871E52C31AEE80095E55A /* Storyboardable.swift in Sources */,
 				CCE41171229F9A87009EF1C2 /* QuoteTableViewCell.swift in Sources */,
 				CCE41174229FA6D2009EF1C2 /* UserDefaults+Settings.swift in Sources */,
 				CCE41152229F9651009EF1C2 /* AppDelegate.swift in Sources */,
@@ -249,6 +337,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D871EF2C31B1740095E55A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE4114D229F9651009EF1C2 /* Quotes */;
+			targetProxy = 00D871EE2C31B1740095E55A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CCE41155229F9651009EF1C2 /* Main.storyboard */ = {
@@ -270,6 +366,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00D871F12C31B1740095E55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UK87X7N6A9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jheisecke.QuotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quotes";
+			};
+			name = Debug;
+		};
+		00D871F22C31B1740095E55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UK87X7N6A9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jheisecke.QuotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quotes";
+			};
+			name = Release;
+		};
 		CCE4115E229F9652009EF1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +574,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00D871F02C31B1740095E55A /* Build configuration list for PBXNativeTarget "QuotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D871F12C31B1740095E55A /* Debug */,
+				00D871F22C31B1740095E55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCE41149229F9651009EF1C2 /* Build configuration list for PBXProject "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
